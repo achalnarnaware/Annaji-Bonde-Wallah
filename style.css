@@ -1,0 +1,156 @@
+
+.navbar-brand {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    background-color: rgb(207, 55, 50);
+}
+.navbar-nav .nav-link {
+    color: rgb(244, 234, 234) !important;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: yellow !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.navbar-brand img {
+    height: 200px;
+    margin-right: 4px;
+     /* border-radius: 70%;
+} 
+.navbar-brand img:hover { */
+    height: 200px;
+     /* transform: scale(1.1) rotate(5deg);  */
+    /* box-shadow: 0 0px 0px rgba(220, 127, 14); */
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: rgb(235, 144, 16);
+    padding: 100px 0;
+}
+
+/* Our Servings */
+#images {
+    background-color: #f8f9fa; /* Light background for contrast */
+    /* padding: 50px 0; */
+}
+
+/* Card Styling */
+.card {
+    height: 150%;
+    width: 130%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    /* transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Text Styling */
+.card-body {
+    /* padding: 20px; */
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d9534f; /* Reddish color for emphasis */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .row.g-0 {
+        flex-direction: column;
+    }
+
+    .col-md-4, .col-md-8 {
+        width: 100%;
+    }
+}
+
+
+
+/* Contact Section */
+.contact-details p {
+    margin: 10px 0;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #1d2127;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 150px; /* Adjust image size for mobile */
+    }
+
+    .hero-section {
+        padding: 60px 0; /* Adjust padding for mobile */
+    }
+
+    .gallery img {
+        height: 180px; /* Adjust image size for mobile */
+        width: 180px;
+    }
+
+    footer {
+        padding: 10px 0; /* Adjust footer padding for mobile */
+    }
+}
+
+/* Large Screen (Laptop/Tablet) Styles */
+@media (min-width: 769px) {
+    .navbar-brand img {
+        height: 180px; /* Default image size for large screens */
+    }
+
+    .hero-section {
+        padding: 100px 0; /* Default padding for larger screens */
+    }
+
+    .gallery img {
+        height: 220px; /* Default image size for gallery */
+        width: 220px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: rgb(44, 42, 42);
+    padding: 15px 0;
+}
